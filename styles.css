@@ -90,7 +90,9 @@ img {
 .credibility-grid,
 .cta-layout,
 .contact-grid,
-.profile-grid {
+.profile-grid,
+.matrix-grid,
+.credibility-stack {
   display: grid;
   gap: 1.5rem;
 }
@@ -327,6 +329,10 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.matrix-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card,
 .timeline-card,
 .credibility-card,
@@ -406,11 +412,25 @@ h3 {
   padding: 4rem 0;
 }
 
+.credibility-stack {
+  grid-template-columns: 1fr;
+}
+
 .credibility-card,
 .prose-card-dark {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.12);
   color: #fff;
+}
+
+.dark-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-card .timeline-label,
+.dark-card p {
+  color: rgba(240, 244, 248, 0.88);
 }
 
 .credibility-card .inline-list {
@@ -505,6 +525,7 @@ h3 {
   .cta-layout,
   .profile-grid,
   .contact-grid,
+  .matrix-grid,
   .card-grid,
   .timeline-grid,
   .footer-shell {
