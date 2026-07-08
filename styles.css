@@ -207,7 +207,7 @@ img {
 .panel-kicker,
 .timeline-label,
 .detail-block span,
-.contact-placeholder span,
+.contact-detail span,
 .identifier-list span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
@@ -468,7 +468,7 @@ h3 {
 }
 
 .detail-block,
-.contact-placeholder,
+.contact-detail,
 .identifier-list div {
   display: flex;
   flex-direction: column;
@@ -479,18 +479,14 @@ h3 {
 }
 
 .detail-block strong,
-.contact-placeholder strong,
+.contact-detail strong,
 .identifier-list strong {
   font-size: 1rem;
 }
 
-.placeholder-card {
+.profile-card-soft {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(245, 240, 232, 0.96));
-}
-
-.placeholder-note {
-  font-style: italic;
 }
 
 .identifier-list {
