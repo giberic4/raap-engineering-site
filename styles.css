@@ -437,6 +437,27 @@ h3 {
   color: #dfe8f1;
 }
 
+.person-link-card {
+  display: block;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.person-link-card:hover,
+.person-link-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(198, 167, 102, 0.55);
+  box-shadow: 0 28px 60px rgba(21, 32, 43, 0.16);
+}
+
+.person-link-card:focus-visible {
+  outline: 3px solid rgba(198, 167, 102, 0.35);
+  outline-offset: 3px;
+}
+
+.person-link-card .text-link {
+  margin-top: 1.2rem;
+}
+
 .text-link {
   display: inline-block;
   margin-top: 1rem;
